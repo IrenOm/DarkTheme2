@@ -12,6 +12,7 @@
 		82066E4729E030AE00C51B0F /* ThemeViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82066E4629E030AE00C51B0F /* ThemeViewContoller.swift */; };
 		82066E4A29E030AE00C51B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82066E4829E030AE00C51B0F /* Main.storyboard */; };
 		82066E4C29E030B000C51B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82066E4B29E030B000C51B0F /* Assets.xcassets */; };
+		822CB8C729E5BB2B006A0294 /* Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CB8C629E5BB2B006A0294 /* Exstension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		82066E4B29E030B000C51B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82066E5029E030B000C51B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82066E6329E057D600C51B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		822CB8C629E5BB2B006A0294 /* Exstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exstension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				82066E5729E04FD500C51B0F /* AppDelegate */,
+				822CB8C429E5BA9C006A0294 /* Extensions */,
 				82066E5829E0563000C51B0F /* Controller */,
 				82066E6429E0588400C51B0F /* View */,
 				82066E4B29E030B000C51B0F /* Assets.xcassets */,
@@ -88,6 +91,14 @@
 				82066E6229E057D600C51B0F /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		822CB8C429E5BA9C006A0294 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				822CB8C629E5BB2B006A0294 /* Exstension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				82066E4729E030AE00C51B0F /* ThemeViewContoller.swift in Sources */,
 				82066E4329E030AE00C51B0F /* AppDelegate.swift in Sources */,
 				82066E4529E030AE00C51B0F /* SceneDelegate.swift in Sources */,
+				822CB8C729E5BB2B006A0294 /* Exstension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

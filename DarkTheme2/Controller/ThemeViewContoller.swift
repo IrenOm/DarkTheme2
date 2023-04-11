@@ -11,7 +11,7 @@ class ThemeViewContoller: UIViewController {
 
     
     @IBOutlet weak var darkThemeButton: UIButton!
-    var mainText: String = "Dark Theme ON"
+    var mainText: String = "Dark Theme OFF"
     var darkIsOn: Bool = false
     
     override func viewDidLoad() {
@@ -25,17 +25,29 @@ class ThemeViewContoller: UIViewController {
     @IBAction func darkThemeButtonTapped(_ sender: Any) {
         
         darkThemeIsOn(isOn: darkIsOn)
+        
     }
     
+    @IBAction func plussButtonTapped(_ sender: Any) {
+        basicAlert(title: "Add New?", message: "Do you want to add new ... ?")
+        
+    }
+    
+    @IBAction func infoButtonTaped(_ sender: Any) {
+        basicActionAlert(title: "Action Sheet is ON", message: "All good here")
+    }
+    
+    
     func darkThemeIsOn(isOn: Bool){
-        // mainText = "Dark Theme ON"
+        mainText = isOn ? "Dark Theme ON" : "Dark Theme OFF"
         darkThemeButton.setTitle(mainText, for: .normal)
-        darkThemeButton.setTitleColor(UIColor.black, for: .normal)
+        darkThemeButton.setTitleColor(isOn ? UIColor.black : UIColor.white, for: .normal)
         
         
         navigationItem.title = mainText
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
-        view.backgroundColor = UIColor.black
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: isOn ? UIColor.black : UIColor.white]
+        view.backgroundColor = !isOn ? UIColor.black : UIColor.white
+        darkIsOn.toggle()
         
     }
     

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzy-Y7-A0s">
-                                <rect key="frame" x="88.5" y="266.5" width="143.5" height="35"/>
+                                <rect key="frame" x="87" y="266.5" width="146.5" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="4T1-kW-pym"/>
@@ -25,7 +25,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Dark Theme On"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dark Theme ON"/>
                                 <connections>
                                     <action selector="darkThemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssf-ht-uzu"/>
                                 </connections>
@@ -38,7 +38,26 @@
                             <constraint firstItem="Qzy-Y7-A0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pyK-gq-X8Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i9X-a4-UPq"/>
+                    <navigationItem key="navigationItem" id="i9X-a4-UPq">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="2Rx-8C-2uC">
+                            <connections>
+                                <action selector="plussButtonTapped:" destination="BYZ-38-t0r" id="guX-Mx-oBz"/>
+                            </connections>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="R4a-ln-Qow">
+                            <rect key="frame" x="87" y="5" width="146.5" height="34.5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Dark Theme ON"/>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" title="Info" image="info.circle" catalog="system" id="qAy-2T-ofz">
+                            <connections>
+                                <action selector="infoButtonTaped:" destination="BYZ-38-t0r" id="6pe-iq-hxk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="darkThemeButton" destination="Qzy-Y7-A0s" id="hnp-Vx-yTm"/>
                     </connections>
@@ -67,6 +86,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
